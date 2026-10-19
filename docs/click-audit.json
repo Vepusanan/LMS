@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "Login validation, password visibility, simulated reset and login",
+    "Skip link focuses main without changing hash route",
+    "Sidebar collapse and expand",
+    "Course filters, sort, list mode and semester expansion",
+    "All course tabs and simulated resource download",
+    "Participant search, private profile and validated local compose",
+    "Notification read state and empty unread filter",
+    "FAQ, support draft validation and download",
+    "Reading font, language stub and confirmed settings reset",
+    "Mobile More navigation and timetable day tabs",
+    "404 recovery"
+  ],
+  "pageErrors": []
+}

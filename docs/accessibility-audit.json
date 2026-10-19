@@ -1,0 +1,152 @@
+[
+  {
+    "theme": "light",
+    "route": "/",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/courses",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/courses/ml?tab=Content",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/assignments",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/assignments/a1",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/timetable",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/messages",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/notifications",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/exam-registration",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/settings",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/grades",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/participants",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/help",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/usability",
+    "violations": []
+  },
+  {
+    "theme": "light",
+    "route": "/login",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/courses",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/courses/ml?tab=Content",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/assignments",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/assignments/a1",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/timetable",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/messages",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/notifications",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/exam-registration",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/settings",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/grades",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/participants",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/help",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/usability",
+    "violations": []
+  },
+  {
+    "theme": "dark",
+    "route": "/login",
+    "violations": []
+  }
+]
