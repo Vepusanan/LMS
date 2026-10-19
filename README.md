@@ -22,7 +22,23 @@ npm run build
 npm run preview
 ```
 
-The production output is `dist/`. Serve it over HTTP using `npm run preview` or any static host. Hash routing avoids server-side route rewrites. Opening `dist/index.html` directly with `file://` is not supported by browser ES-module security rules. This is a local project; it has not been deployed to a public service.
+The production output is `dist/`. Serve it over HTTP using `npm run preview` or any static host. Hash routing avoids server-side route rewrites. Opening `dist/index.html` directly with `file://` is not supported by browser ES-module security rules. Public deployment is not yet configured; see [CI/CD and Vercel deployment](#cicd-and-vercel-deployment).
+
+## CI/CD and Vercel deployment
+
+The GitHub Actions workflow in `.github/workflows/ci-cd.yml` runs the Playwright browser tests and production build for pull requests and pushes to `main`. After a successful check on a push to `main`, it deploys the production build to Vercel. Pull requests run checks only; they do not receive Vercel preview deployments.
+
+To enable deployments:
+
+1. Import this GitHub repository into Vercel and link the project. Vercel's project settings contain the **Organization ID** and **Project ID**. A local `vercel link` also writes both values to `.vercel/project.json`.
+2. Create a Vercel access token in your Vercel account settings.
+3. In the GitHub repository, open **Settings → Secrets and variables → Actions** and add these repository secrets:
+   - `VERCEL_TOKEN` — the access token.
+   - `VERCEL_ORG_ID` — the Vercel Organization ID.
+   - `VERCEL_PROJECT_ID` — the Vercel Project ID.
+4. Push or merge to `main`. The workflow skips deployment with a notice until all three secrets are configured.
+
+`vercel.json` configures Vercel to install with `npm ci`, run `npm run build`, and serve the generated `dist/` directory. `.vercel/` is ignored so local project linkage metadata is not committed.
 
 ## What works
 
